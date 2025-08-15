@@ -21,3 +21,8 @@ private:
         quantity = qty;
         Price = pri;
     }
+    //setter
+    void setFoodID(int id) { foodID = id; }
+    void setFoodName(string name) { foodName = name; }
+    void setQuantity(int qty) { quantity = qty; }
+    void setPrice(int pri) { Price = pri; }
