@@ -31,3 +31,15 @@ private:
     string getFoodName() const { return foodName; }
     int getQuantity() const { return quantity; }
     int getPrice() const { return Price; }
+// Increase quantity
+    void addQuantity(int qty) { quantity += qty; }
+
+    // Calculate total price for this item
+    int getTotalPrice() const { return quantity * Price; }
+
+    // Display item details
+    void print() const
+    {
+        cout << foodName << "\t" << Price << "\t" << quantity << "\t" << getTotalPrice() << "\n";
+    }
+};
