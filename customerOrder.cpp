@@ -11,3 +11,13 @@ private:
     string foodName;
     int quantity;
     int Price;
+    public:
+    // Constructors
+    OrderItem() {};
+    OrderItem(int id, int qty, int pri, const string &name)
+    {
+        foodID = id;
+        foodName = name;
+        quantity = qty;
+        Price = pri;
+    }
