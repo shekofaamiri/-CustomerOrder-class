@@ -26,3 +26,8 @@ private:
     void setFoodName(string name) { foodName = name; }
     void setQuantity(int qty) { quantity = qty; }
     void setPrice(int pri) { Price = pri; }
+ // Getters
+    int getFoodID() const { return foodID; }
+    string getFoodName() const { return foodName; }
+    int getQuantity() const { return quantity; }
+    int getPrice() const { return Price; }
