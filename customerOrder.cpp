@@ -43,3 +43,23 @@ private:
         cout << foodName << "\t" << Price << "\t" << quantity << "\t" << getTotalPrice() << "\n";
     }
 };
+// Represents a customer's complete order
+class CustomerOrder
+{
+private:
+    vector<OrderItem> items;
+
+public:
+    // Add new item or increase quantity if it exists
+    void addItem(int id, const string &name, int qty, int price)
+    {
+        for (auto &item : items)
+        {
+            if (item.getFoodID() == id)
+            {
+                item.addQuantity(qty);
+                return;
+            }
+        }
+        items.push_back(OrderItem(id, qty, price, name));
+    }
