@@ -46,9 +46,10 @@ private:
 // Represents a customer's complete order
 class CustomerOrder
 {
+
 private:
     vector<OrderItem> items;
-
+// 
 public:
     // Add new item or increase quantity if it exists
     void addItem(int id, const string &name, int qty, int price)
